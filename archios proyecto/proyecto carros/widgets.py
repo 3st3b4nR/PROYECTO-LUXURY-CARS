@@ -52,6 +52,9 @@ def credito():
     titulo1.place(relx=0.5,rely=0.15, anchor="center")
     titulo2=tk.Label(frame_blanco, text="TU CREDITO", font=("Georgia", 50), bg="white", fg="black")
     titulo2.place(relx=0.5, rely=0.29, anchor="center")
+    
+    Boton1= tk.Button( frame_blanco, bg= "black", text= "Establecer \n Credito", fg="white", font=("Georgia", 20), width=15, command=pag_credito2)
+    Boton1.place(relx=0.75, rely=0.8, anchor="center")
         
     miimage=Image.open(r'C:\Users\Juanm\Python\ALGORITMOS 2\Imagen de WhatsApp 2025-02-25 a las 07.12.58_9f3472e6.jpg')#Abre la imagen
     miimage= miimage.resize((300,150))#medida de la imagen
@@ -81,9 +84,17 @@ def credito():
     labell.image=foto
     labell.place(x=850, y=250)
 
-    Boton1= tk.Button( interfaz, bg= "black", text= "Establecer \n Credito", fg="white")
-    Boton1.config(width=42, height=2)
-    Boton1.place(x= 850, y= 425)
+
+#---------------------------pagina de credito 2---------------------------#
+def pag_credito2():
+    clean(interfaz)
+    frame_blanco=tk.Frame(interfaz,bg="white", width=1200, height=600)
+    frame_blanco.place(relx=0.5, rely=0.5, anchor="center")
+
+    titulo1=tk.Label(frame_blanco, text="- CALCULADORA -", font=("Georgia", 80), bg="white", fg="gold")
+    titulo1.place(relx=0.5,rely=0.15, anchor="center")
+    titulo2=tk.Label(frame_blanco, text="DE CREDITO", font=("Georgia", 50), bg="white", fg="black")
+    titulo2.place(relx=0.5, rely=0.29, anchor="center")
 
 
 #----------------------Página de compra----------------------#

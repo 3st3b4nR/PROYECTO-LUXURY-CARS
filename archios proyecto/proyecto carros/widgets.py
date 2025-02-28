@@ -178,6 +178,7 @@ def pag_lamborghini():
     carro.place(x=125, y=260)
     avanzar()
     regresar()
+    suma_avanzar()
 
 #----------------------Página de Ferrari----------------------#
 def pag_ferrari():
@@ -213,6 +214,7 @@ def pag_ferrari():
     carro.place(x=125, y=260)
     avanzar()
     regresar()
+    suma_avanzar()
 
 #----------------------Página de Mercedes----------------------#
 def pag_mercedes():
@@ -247,6 +249,7 @@ def pag_mercedes():
     carro.place(x=125, y=260)
     avanzar()
     regresar()
+    suma_avanzar()
 
 #----------------------Página de BMW----------------------#
 def pag_bmw():
@@ -279,6 +282,7 @@ def pag_bmw():
     carro.place(x=125, y=260)
     avanzar()
     regresar()
+    suma_avanzar() # Hace el moviento al principio
 
 #----------------------Interfaz principal----------------------#
 def menu():

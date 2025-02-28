@@ -282,7 +282,7 @@ def pag_bmw():
     carro.place(x=125, y=260)
     avanzar()
     regresar()
-    suma_avanzar()
+    suma_avanzar() # Hace el moviento al principio
 
 #----------------------Interfaz principal----------------------#
 def menu():

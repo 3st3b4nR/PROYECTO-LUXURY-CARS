@@ -53,33 +53,21 @@ def credito():
     titulo2=tk.Label(frame_blanco, text="TU CREDITO", font=("Georgia", 50), bg="white", fg="black")
     titulo2.place(relx=0.5, rely=0.29, anchor="center")
         
-    miimage=Image.open(r'C:\Users\Juanm\Python\ALGORITMOS 2\Imagen de WhatsApp 2025-02-25 a las 07.12.58_9f3472e6.jpg')#Abre la imagen
-    miimage= miimage.resize((300,150))#medida de la imagen
-    foto = ImageTk.PhotoImage(miimage)#La vonvierte en formato pillow
-    labell = tk.Label(interfaz,image=foto)#La convierte en etiqueta}
-    labell.image=foto
-    labell.place(x=125, y=210)
+    sistecredito = img.conversor("sistecredito logo.png")
+    label_siste = tk.Label(interfaz,image=sistecredito)#La convierte en etiqueta}
+    label_siste.place(x=125, y=210)
 
-    miimage=Image.open(r'C:\Users\Juanm\Python\ALGORITMOS 2\Imagen de WhatsApp 2025-02-25 a las 07.12.58_9f3472e6.jpg')#Abre la imagen
-    miimage= miimage.resize((300,150))#medida de la imagen
-    foto = ImageTk.PhotoImage(miimage)#La vonvierte en formato pillow
-    labell = tk.Label(interfaz,image=foto)#La convierte en etiqueta}
-    labell.image=foto
-    labell.place(x=125, y=400)
+    addi = img.conversor("addi logo.png")
+    label_addi = tk.Label(interfaz,image=addi)#La convierte en etiqueta}
+    label_addi.place(x=125, y=400)
 
-    miimage=Image.open(r'C:\Users\Juanm\Python\ALGORITMOS 2\Imagen de WhatsApp 2025-02-25 a las 07.12.58_9f3472e6.jpg')#Abre la imagen
-    miimage= miimage.resize((300,150))#medida de la imagen
-    foto = ImageTk.PhotoImage(miimage)#La vonvierte en formato pillow
-    labell = tk.Label(interfaz,image=foto)#La convierte en etiqueta}
-    labell.image=foto
-    labell.place(x=450, y=300)
+    su = img.conversor("su+ logo.png")
+    label_su = tk.Label(interfaz,image=su)#La convierte en etiqueta}
+    label_su.place(x=450, y=300)
 
-    miimage=Image.open(r'C:\Users\Juanm\Python\ALGORITMOS 2\Imagen de WhatsApp 2025-02-25 a las 07.12.58_9f3472e6.jpg')#Abre la imagen
-    miimage= miimage.resize((300,150))#medida de la imagen
-    foto = ImageTk.PhotoImage(miimage)#La vonvierte en formato pillow
-    labell = tk.Label(interfaz,image=foto)#La convierte en etiqueta}
-    labell.image=foto
-    labell.place(x=850, y=250)
+    targeta = img.conversor("targeta.jpeg")
+    label_tarjeta = tk.Label(interfaz,image=targeta)#La convierte en etiqueta}
+    label_tarjeta.place(x=850, y=250)
 
     Boton1= tk.Button( interfaz, bg= "black", text= "Establecer \n Credito", fg="white")
     Boton1.config(width=42, height=2)
